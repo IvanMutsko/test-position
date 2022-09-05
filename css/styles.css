@@ -1,0 +1,157 @@
+:root {
+    --main-text: #000000;
+    --secondary-text: #757575;
+    --white-text: #FFFFFF;
+    --accent-color: #2196F3;
+
+}
+/* боді */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--main-text);
+}
+/* header */
+/* лого */
+.logo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    
+    text-decoration: none;
+    color: var(--main-text);
+}
+
+.logo-web {
+    color: var(--accent-color);
+}
+.navigation {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    
+}
+.nav-list {
+    list-style-type: none;
+}
+.nav-list a {
+    text-decoration: none;
+    color: var(--main-text);
+}
+.nav-list .active-page {
+    color: var(--accent-color);
+}
+.contacts {
+    font-weight: 500;
+    line-height: 1.14;
+    list-style-type: none;
+}
+.contacts a {
+    color: var(--secondary-text);
+    text-decoration: none;
+}
+/* hover+focus */
+.hover:hover {
+    color: var(--accent-color);
+}
+
+/* footer */
+footer {
+    background-color: #2F303A;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+address {
+    font-style: normal;
+    color: var(--white-text);
+}
+.contacts-footer {
+    color: var(--secondary-text);
+    text-decoration: none;
+}
+
+/* main content */
+
+/* heroic */
+h1 {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: var(--white-text);
+    background-color: #2F303A;
+}
+.button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--white-text);
+    background-color: var(--accent-color);
+}
+/* benefits */
+.hiden-title {
+    display: none;
+}
+.benefits-list {
+    list-style-type: none;
+}
+.benefits-title {
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-text);
+}
+.benefits-text {
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text);
+}
+/* чим займаємось */
+.employment-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+/* наша команда */
+.command-list {
+    list-style-type: none;
+}
+.command-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.position {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text);
+}
