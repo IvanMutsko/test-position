@@ -4,6 +4,7 @@
     --white-text: #FFFFFF;
     --accent-color: #2196F3;
     --command-background: #F5F4FA;
+    --button-text: #212121
 }
 
 /* боді */
@@ -14,11 +15,16 @@ body {
     font-style: normal;
     color: var(--main-text);
 }
+/* приховані заголовки */
+.hiden-title {
+    display: none;
+}
 /* header */
 header {
     width: 1600px;
     height: 80px;
     display: flex;
+    border-bottom: 1px solid #ECECEC;
 }
 /* лого */
 .logo {
@@ -169,12 +175,11 @@ h1 {
 
     height: 50px;
     width: 216px;
+    border: 0px;
     border-radius: 4px;
 }
 /* benefits */
-.hiden-title {
-    display: none;
-}
+
 .benefits-list {
     list-style-type: none;
 
@@ -271,3 +276,55 @@ h1 {
     letter-spacing: 0.03em;
     color: var(--secondary-text);
 }
+
+/* PORTFOLIO */
+.examples {
+    width: 1170px;
+    height: 1360px;
+    border: 1px solid #EEEEEE;
+    margin: 94px 215px;
+}
+.filter {
+    list-style-type: none;
+
+
+    display: flex;
+}
+.filter-button {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--button-text);
+    background-color: var(--command-background);
+    border: 0;
+    border-radius: 4px;
+}
+.filter-button:hover,
+.filter-button:focus,
+.active-button {
+    color: var(--white-text);
+    background-color: var(--accent-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.examples-list {
+    list-style-type: none;
+
+}
+.examples-list h2 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.examples-list p {
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text);
+}
+
+
+
