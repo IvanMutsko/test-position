@@ -3,7 +3,7 @@
     --secondary-text: #757575;
     --white-text: #FFFFFF;
     --accent-color: #2196F3;
-
+    --command-background: #F5F4FA;
 }
 
 /* боді */
@@ -97,6 +97,10 @@ footer {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+
+    width: 1600px;
+    height: 252px;
+    padding: 60px 0 60px 215px;
 }
 .logo-footer {
     font-family: 'Raleway';
@@ -111,15 +115,32 @@ footer {
 address {
     font-style: normal;
     color: var(--white-text);
+    margin-top: 20px;
+}
+footer p {
+    margin: 0;
 }
 .contacts-footer {
     color: var(--secondary-text);
     text-decoration: none;
 }
-
+.mail-footer {
+    width: 136px;
+    margin-top: 9px;
+}
+.tel-footer{
+    width: 231px;
+    margin-top: 9px;
+}
 /* main content */
 
 /* heroic */
+.heroic {
+    background-color: #2F303A;
+    width: 1600px;
+    height: 600px;
+    padding: 200px 452px;
+}
 h1 {
     font-weight: 900;
     font-size: 44px;
@@ -129,7 +150,8 @@ h1 {
     text-transform: uppercase;
 
     color: var(--white-text);
-    background-color: #2F303A;
+    width: 696px;
+    height: 120px;
 }
 .button {
     font-weight: 700;
@@ -141,6 +163,13 @@ h1 {
     letter-spacing: 0.06em;
     color: var(--white-text);
     background-color: var(--accent-color);
+
+    display: block;
+    margin: 30px auto;
+
+    height: 50px;
+    width: 216px;
+    border-radius: 4px;
 }
 /* benefits */
 .hiden-title {
@@ -148,6 +177,15 @@ h1 {
 }
 .benefits-list {
     list-style-type: none;
+
+    display: flex;
+    width: 1170px;
+    margin: 94px auto 0 auto;
+    padding: 0;
+}
+.benefits-item {
+    width: 270px;
+    margin-right: 30px;
 }
 .benefits-title {
     font-weight: 700;
@@ -163,16 +201,53 @@ h1 {
     color: var(--secondary-text);
 }
 /* чим займаємось */
+.employment {
+    width: 1170px;
+    height: 386px;
+    margin: 94px auto;
+    padding: 0;
+}
 .employment-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
+
+    margin: 0 auto;
 }
+.employments-img {
+    display: flex;
+    margin-top: 50px;
+}
+.employment img:not(:last-child) {
+    margin-right: 30px;
+}
+
 /* наша команда */
+.command {
+        background-color: var(--command-background);
+            width: 1600px;
+            height: 648px;
+            padding: 94px 215px;
+}
+
 .command-list {
     list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 50px 0 94px 0;
+}
+.command-list li {
+    background-color: var(--white-text);
+
+    width: 270px;
+    height: 368px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+.command-list li:not(:last-child) {
+    margin-right: 30px;
 }
 .command-title {
     font-weight: 700;
@@ -180,6 +255,7 @@ h1 {
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
+    margin: 0;
 }
 .name {
     font-weight: 500;
